@@ -46,14 +46,17 @@ plugins:
 author:
   name   : "Celena Tan"
   avatar : "/assets/images/bio-photo.png"
-  bio    : "Blah Blah Blah"
+  bio    : "Technology enthusiast ..."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://celtan.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/celtan"
+    - label: "Linkedin"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/celenatan/"
 
 
 footer:
@@ -64,6 +67,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/celtan"
+    - label: "Linkedin"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/celenatan/"
 
 defaults:
   # _posts
