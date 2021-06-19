@@ -50,7 +50,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://celtan.github.io"
+      url: "https://blog.celenatan.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/celtan"
@@ -63,7 +63,7 @@ footer:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://blog.celenatan.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/celtan"
