@@ -9,14 +9,9 @@ tags:
   - minimal mistakes
 ---
 
-This is a very simplistic guide to setting up my own personal blog using github pages.  As a GitHub user you do have one free "user" website which will live at https://username.github.io
+This is a dummies guide to setting up my own personal blog using github pages.  As a GitHub user you do have one free "user" website which will live at https://username.github.io
 
-Some assumptions:
-
-1. Using a mac; This has been tested on Big Sur 11.4 with an Apple M1 Chip
-2. Ability to use homebrew and Git
-
-## Mac Setup
+## Setting up your local environment on your Mac
 
 A prerequisite to installing Jekyll is Homebrew and Ruby. 
 
@@ -119,6 +114,10 @@ A prerequisite to installing Jekyll is Homebrew and Ruby.
         `YEAR-MONTH-DAY-name-of-script.md` - save this file in the _scripts directory
       - To test your site locally run:
         ```bash
+
+        # first time runninng or if there are changes to Gemfile
+        bundle
+
         # at the root of your repo ie <path-to>/username-github-io
         bundle exec jekyll serve
 
@@ -158,3 +157,10 @@ A prerequisite to installing Jekyll is Homebrew and Ruby.
           - It will take a few minutes to verify before you will be able to click `Enforce HTTPS`
       
     - Navigate to `https://blog.mydomain.com` to your personal blog!!
+
+### Useful Links:
+
+* [Jekyll HomePage](https://jekyllrb.com/)
+* [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/)
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
+* [GitHub Pages - Jekyll Dependencies](https://pages.github.com/versions/)
