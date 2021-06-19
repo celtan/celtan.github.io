@@ -9,7 +9,7 @@ tags:
   - minimal mistakes
 ---
 
-This is a very simplistic guide to setting up my own personal blog using github pages.  As a GitHub user you do have one free "user" website which will live at https://\<git-username>.github.io
+This is a very simplistic guide to setting up my own personal blog using github pages.  As a GitHub user you do have one free "user" website which will live at https://username.github.io
 
 Some assumptions:
 
@@ -40,7 +40,8 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor 
 
 # restart your terminal session
 ```
-3. Check [GitPages Dependencies](https://pages.github.com/versions/) to obtain the version of Ruby plus other Gems to install
+3. Check [GitPages Dependencies](https://pages.github.com/versions/) to obtain the version of Ruby plus other Gem dependencies
+   
 ```bash
 # as of 19/06/2021 the  ruby version required is 2.7.3
 rbenv install 2.7.3
@@ -51,7 +52,9 @@ echo "export PATH=$HOME/.gem/ruby/2.7.0/bin:$PATH" >> ~/.zshrc
 ruby -v
 > ruby 2.7.3p183 (2021-04-05 revision 6847ee089d) [arm64-darwin20]
 ```
+
 4. Install `Jekyll`
+  
 ```bash
 gem install --user-install bundler jekyll
 ```
@@ -67,6 +70,7 @@ gem install --user-install bundler jekyll
      cd username.github.io
      ```
 5. Add the Gemfile 
+  
 ```bash
 # Gemfile
 source 'https://rubygems.org'
@@ -84,8 +88,8 @@ group :jekyll_plugins do
     gem "jemoji", "~> 0.12.0"
     gem "jekyll-include-cache"
   end
-
 ```
+
 6. Add the _config.yml found [here](https://github.com/celtan/jekyll-template/blob/main/_config.yml).  Update this file with your details
 
 6. Copy the remaining files from the repo:
@@ -97,8 +101,8 @@ group :jekyll_plugins do
 - _scripts/    # this is where all your scripts that you want to share will live
 
 :exclamation:Note: this template sets up a page using the [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/) with three Navigation links -> Posts, Scripts, About Me
-![default-jekyll-page](./img/default-jekyll-page.png)
 
+![default-jekyll-page](/assets/images/default-jekyll-page.png)
 To add additional navigational links:
 - replicate the [scope](https://github.com/celtan/jekyll-template/blob/main/_config.yml#L82-L87) block
 - add the [navigation](https://github.com/celtan/jekyll-template/blob/main/_data/navigation.yml#L6-L7)
@@ -106,12 +110,21 @@ To add additional navigational links:
 
      :exclamation: [scripts.md](https://github.com/celtan/jekyll-template/blob/main/_pages/scripts-archive.md) can be used as an example.
 
-Create your new posts and save it with this format:
-`YEAR-MONTH-DAY-name-of-post.md` - save this file in the _posts directory
-Create your new scripts and save it with this format:
-`YEAR-MONTH-DAY-name-of-script.md` - save this file in the _scripts directory
+  Create your new posts and save it with this format:
+  `YEAR-MONTH-DAY-name-of-post.md` - save this file in the _posts directory
+  Create your new scripts and save it with this format:
+  `YEAR-MONTH-DAY-name-of-script.md` - save this file in the _scripts directory
+- To test your site locally run:
+  ```bash
+  # at the root of your repo ie <path-to>/username-github-io
+  bundle exec jekyll serve
 
-7. To attach a domain:
+  # browse to:
+  http://localhost:4000
+  
+  ```
+
+1. To attach a domain:
 - Create a CNAME file with the following content;  For this case we are going to call this blog.mydomain.com
   ```bash
    blog.mydomain.com
