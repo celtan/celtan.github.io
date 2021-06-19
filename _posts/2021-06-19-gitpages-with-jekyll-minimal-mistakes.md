@@ -69,7 +69,7 @@ gem install --user-install bundler jekyll
      git clone https://github.com/username/username.github.io.git
      cd username.github.io
      ```
-5. Add the Gemfile 
+6. Add the Gemfile 
   
 ```bash
 # Gemfile
@@ -90,9 +90,9 @@ group :jekyll_plugins do
   end
 ```
 
-6. Add the _config.yml found [here](https://github.com/celtan/jekyll-template/blob/main/_config.yml).  Update this file with your details
+7. Add the _config.yml found [here](https://github.com/celtan/jekyll-template/blob/main/_config.yml).  Update this file with your details
 
-6. Copy the remaining files from the repo:
+8. Copy the remaining files from the repo:
 - index.html
 - assets/      # update the bio-photo.png in the images directory
 - _data/       # navigation.yml defines what your navigation will look 
@@ -124,7 +124,7 @@ To add additional navigational links:
   
   ```
 
-1. To attach a domain:
+9. To attach a domain:
 - Create a CNAME file with the following content;  For this case we are going to call this blog.mydomain.com
   ```bash
    blog.mydomain.com
@@ -146,7 +146,3 @@ To add additional navigational links:
     - click `Save`
     - It will take a few minutes to verify before you will be able to click `Enforce HTTPS`
 - Navigate to `https://blog.mydomain.com` to your personal blog!!
-
-
-
-
